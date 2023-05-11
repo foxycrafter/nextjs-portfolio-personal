@@ -6,23 +6,48 @@ import { Card } from "../components/card";
 
 const socials = [
 	{
-		icon: <Twitter size={20} />,
-		href: "https://twitter.com/chronark_",
+		icon: <Twitter size={30} />,
+		href: "https://twitter.com/Foxycrafte",
 		label: "Twitter",
-		handle: "@chronark_",
+		handle: "@Foxycrafte",
 	},
 	{
-		icon: <Mail size={20} />,
-		href: "mailto:dev@chronark.com",
+		icon: <Mail size={30} />,
+		href: "miguelangelvidalguazaquillo@gmail.com",
 		label: "Email",
-		handle: "dev@chronark.com",
+		handle: "miguelangelvidalguazaquillo",
 	},
 	{
-		icon: <Github size={20} />,
-		href: "https://github.com/chronark",
+		icon: <Github size={30} />,
+		href: "https://github.com/foxycrafter",
 		label: "Github",
-		handle: "chronark",
+		handle: "Foxycrafter",
 	},
+	{
+		icon: <SiReplit size={30} />,
+		href: "https://replit.com/@FoxycrafterTrol",
+		label: "Telegram",
+		handle: "Foxycrafter",
+	},
+	{
+		icon: <SiTelegram size={30} />,
+		href: "https://replit.com/@FoxycrafterTrol",
+		label: "Telegram",
+		handle: "Foxycrafter",
+	},
+	{
+		icon: <SiDiscord size={30} />,
+		href: "https://replit.com/@FoxycrafterTrol",
+		label: "Discord",
+		handle: "Foxycrafter",
+	},
+	{
+		icon: <SiPatreon size={30} />,
+		href: "patreon.com/foxycrafter17",
+		label: "Patreon",
+		handle: "foxycrafter",
+	},
+
 ];
 
 export default function Example() {
