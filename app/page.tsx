@@ -1,82 +1,54 @@
 import Link from "next/link";
 import React from "react";
-import { allProjects } from "contentlayer/generated";
-import { Navigation } from "../components/nav";
-import { Card } from "../components/card";
-import { Article } from "./article";
-import { Redis } from "@upstash/redis";
-import { Eye } from "lucide-react";
-import { SiPython, SiReact } from "react-icons/si";
+import Particles from "./components/particles";
 
+const navigation = [
+	{ name: "Skills", href: "/skills"},
+	{ name: "Projects", href: "/proyects" },
+	{ name: "Contact", href: "/contact" },
+];
 
-export const revalidate = 60;
-export default async function ProjectsPage() {
+export default function Home() {
 	return (
-		<div className="relative pb-16">
-			<Navigation />
-			<div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
-				<div className="max-w-2xl mx-auto lg:mx-0">
-					<h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
-						SkillSets
-					</h2>
-					
-				</div>
-				<div className="w-full h-px bg-zinc-800" />
-				<p className="mt-4 text-zinc-400">
-					Lenguages.
-				</p>
-				<div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
-					<Card><p className="mt-4 text-zinc-400">English  =  B2+  = Toic / Tofel / Opp</p></Card>
-					<Card><p className="mt-4 text-zinc-400">Spanish  =  Native</p></Card>
-				</div>
-				<div className="w-full h-px bg-zinc-800" />
-				<p className="mt-4 text-zinc-400">
-						Programing.
-						
-						
-					</p>
-					
-					
-				<div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
-					<Card><p className="mt-4 text-zinc-400">Python  =  Inermediate </p></Card>
-					<Card><p className="mt-4 text-zinc-400">Nextjs  =  Intermediate</p></Card>
-					<Card><p className="mt-4 text-zinc-400">React  =  Intermediate</p></Card>
-					<Card><p className="mt-4 text-zinc-400">Bootstrap  =  Intermediate</p></Card>
-				</div>
+		<div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+			<nav className="my-16 animate-fade-in">
+				<ul className="flex items-center justify-center gap-4">
+					{navigation.map((item) => (
+						<Link
+							key={item.href}
+							href={item.href}
+							className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
+						>
+							{item.name}
+						</Link>
+					))}
+				</ul>
+			</nav>
+			<div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
+			<Particles
+				className="absolute inset-0 -z-10 animate-fade-in"
+				quantity={100}
+			/>
+			<h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
+				Portfolio
+			</h1>
 
-				<div className="hidden w-full h-px md:block bg-zinc-800" />
-				<p className="mt-4 text-zinc-400">
-					Designe and Modeling
-				</p>
-				<div className="grid grid-cols-1 gap-8 mx-auto lg:mx-0 md:grid-cols-2">
-				<Card><p className="mt-4 text-zinc-400">Blender  =  Intermediate</p></Card>
-				<Card><p className="mt-4 text-zinc-400">Kirita  =  Intermediate</p></Card>
-				<Card><p className="mt-4 text-zinc-400">Substance  =  Intermediate</p></Card>
-				<Card><p className="mt-4 text-zinc-400">Pothoshop  =  Basic / Intermediate</p></Card>
-				</div>
+			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
+			<div className="my-16 text-center animate-fade-in">
+				<h2 className="text-sm text-zinc-500 ">
+					Hi, my name is Miguel Angel Vidal, I'm a freelancer
+					I work in {" "}
+					<Link
+						target="_blank"
+						href="https://www.fiverr.com/foxycrafter"
+						className="underline duration-500 hover:text-zinc-300"
+					>
+						Fiver
+					</Link>
 
-				<div className="hidden w-full h-px md:block bg-zinc-800" />
-				<p className="mt-4 text-zinc-400">
-						Database.
-					</p>
-					
-				<div className="grid  grid-cols-1 gap-8 mx-auto lg:mx-0 md:grid-cols-2">
-					
-					<Card><p className="mt-4 text-zinc-400">Mysql  =  Intermediate</p></Card>
-					<Card><p className="mt-4 text-zinc-400">Postgrest  =  Intermediate</p></Card>
-					
-					
-				</div>
-				<div className="hidden w-full h-px md:block bg-zinc-800" />
-				<p className="mt-4 text-zinc-400">
-					General knowlage
-				</p>
-				<div className="grid  grid-cols-1 gap-8 mx-auto lg:mx-0 md:grid-cols-2">
-					<Card><p className="mt-4 text-zinc-400">Virtual machines  =  Intermediate</p></Card>
-					<Card><p className="mt-4 text-zinc-400">Cybersecurity Introduction  =  Intermediate</p></Card>
-					<Card><p className="mt-4 text-zinc-400">Linux Distributios  =  Basic / Intermediate</p></Card>
-					<Card><p className="mt-4 text-zinc-400">Cybersecurity with OSINT  =  Basic / Intermediate</p></Card>
-				</div>
+					<br />
+					and working on my linux at night.
+				</h2>
 			</div>
 		</div>
 	);
