@@ -1,8 +1,10 @@
 "use client";
-import { Github, Mail, Twitter } from "lucide-react";
+import { Github, Mail, Twitter, ReplyIcon } from "lucide-react";
+import { SiReplit, SiTelegram, SiDiscord, SiPatreon } from "react-icons/si";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
+
 
 const socials = [
 	{
