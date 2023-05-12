@@ -25,7 +25,7 @@ const socials = [
 		handle: "Fiver",
 	},
 	{
-		icon: <SiTelegram size={30} />,
+		icon: <GiLargePaintBrush size={30} />,
 		href: "/3D",
 		label: "Model",
 		handle: "3D Texturing",
