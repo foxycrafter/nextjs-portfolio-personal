@@ -33,7 +33,6 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		title: "Miguel",
-		card: "",
 	},
 	icons: {
 		shortcut: "/favicon.png",
