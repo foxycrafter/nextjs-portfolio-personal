@@ -6,23 +6,17 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
 	title: {
-		default: "chronark.com",
-		template: "%s | chronark.com",
+		default: "Miguel Angel",
+		template: "%s | ",
 	},
-	description: "Software engineer at upstash.com and founder of planetfall.io",
+	description: "Usually programing my linux",
 	openGraph: {
-		title: "chronark.com",
+		title: "Miguel Angel",
 		description:
-			"Software engineer at upstash.com and founder of planetfall.io",
-		url: "https://chronark.com",
-		siteName: "chronark.com",
-		images: [
-			{
-				url: "https://chronark.com/og.png",
-				width: 1920,
-				height: 1080,
-			},
-		],
+			"Usually programing my linux and learning more",
+		url: "https://nextjs-portfolio-personal.vercel.app/",
+		siteName: "https://nextjs-portfolio-personal.vercel.app/",
+		
 		locale: "en-US",
 		type: "website",
 	},
@@ -36,14 +30,6 @@ export const metadata: Metadata = {
 			"max-image-preview": "large",
 			"max-snippet": -1,
 		},
-	},
-	twitter: {
-		title: "Chronark",
-		card: "summary_large_image",
-	},
-	icons: {
-		shortcut: "/favicon.png",
-	},
 };
 const inter = Inter({
 	subsets: ["latin"],
