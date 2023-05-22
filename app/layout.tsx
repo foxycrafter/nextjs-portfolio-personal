@@ -30,6 +30,13 @@ export const metadata: Metadata = {
 			"max-image-preview": "large",
 			"max-snippet": -1,
 		}
+	twitter: {
+		title: "Miguel
+		card: "summary_large_image",
+	},
+	icons: {
+		shortcut: "/favicon.png",
+	},
 };
 const inter = Inter({
 	subsets: ["latin"],
