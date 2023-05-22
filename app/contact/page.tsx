@@ -7,12 +7,7 @@ import { Card } from "../components/card";
 
 
 const socials = [
-	{
-		icon: <Twitter size={30} />,
-		href: "https://twitter.com/Foxycrafte",
-		label: "Twitter",
-		handle: "@Foxycrafte",
-	},
+	
 	{
 		icon: <Mail size={30} />,
 		href: "miguelangelvidalguazaquillo@gmail.com",
@@ -28,26 +23,8 @@ const socials = [
 	{
 		icon: <SiReplit size={30} />,
 		href: "https://replit.com/@FoxycrafterTrol",
-		label: "Telegram",
+		label: "Replit",
 		handle: "Foxycrafter",
-	},
-	{
-		icon: <SiTelegram size={30} />,
-		href: "https://replit.com/@FoxycrafterTrol",
-		label: "Telegram",
-		handle: "Foxycrafter",
-	},
-	{
-		icon: <SiDiscord size={30} />,
-		href: "https://replit.com/@FoxycrafterTrol",
-		label: "Discord",
-		handle: "Foxycrafter",
-	},
-	{
-		icon: <SiPatreon size={30} />,
-		href: "patreon.com/foxycrafter17",
-		label: "Patreon",
-		handle: "foxycrafter",
 	},
 
 ];
