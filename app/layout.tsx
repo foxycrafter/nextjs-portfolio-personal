@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 	},
 	description: "Usually programing my linux",
 	openGraph: {
-		title: "Miguel Angel",
+		title: "MiguelAngel.com",
 		description:
 			"Usually programing my linux and learning more",
 		url: "https://nextjs-portfolio-personal.vercel.app/",
