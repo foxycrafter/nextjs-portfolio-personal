@@ -26,8 +26,11 @@ export default async function ProjectsPage() {
 					Lenguages.
 				</p>
 				<div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
-					<Card><p className="mt-4 text-zinc-400">English  =  B2+  = Toic / Tofel / Opp</p></Card>
-					<Card><p className="mt-4 text-zinc-400">Spanish  =  Native</p></Card>
+					<Card>
+						<p className="mt-4 text-zinc-400">English  =  B2+  = Toic / Tofel / Opp</p>
+						<p className="mt-4 text-zinc-400">Spanish  =  Native</p>
+					</Card>
+					
 				</div>
 				<div className="w-full h-px bg-zinc-800" />
 				<p className="mt-4 text-zinc-400">
@@ -38,10 +41,12 @@ export default async function ProjectsPage() {
 					
 					
 				<div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
-					<Card><p className="mt-4 text-zinc-400">Python  =  Inermediate </p></Card>
-					<Card><p className="mt-4 text-zinc-400">Nextjs  =  Intermediate</p></Card>
-					<Card><p className="mt-4 text-zinc-400">React  =  Intermediate</p></Card>
-					<Card><p className="mt-4 text-zinc-400">Bootstrap  =  Intermediate</p></Card>
+					<Card>
+						<p className="mt-4 text-zinc-400">Python  =  Inermediate </p>
+						<p className="mt-4 text-zinc-400">Nextjs  =  Intermediate</p>
+						<p className="mt-4 text-zinc-400">React  =  Intermediate</p>
+						<p className="mt-4 text-zinc-400">Bootstrap  =  Intermediate</p>
+						</Card>
 				</div>
 
 				<div className="hidden w-full h-px md:block bg-zinc-800" />
@@ -49,10 +54,12 @@ export default async function ProjectsPage() {
 					Designe and Modeling
 				</p>
 				<div className="grid grid-cols-1 gap-8 mx-auto lg:mx-0 md:grid-cols-2">
-				<Card><p className="mt-4 text-zinc-400">Blender  =  Intermediate</p></Card>
-				<Card><p className="mt-4 text-zinc-400">Kirita  =  Intermediate</p></Card>
-				<Card><p className="mt-4 text-zinc-400">Substance  =  Intermediate</p></Card>
-				<Card><p className="mt-4 text-zinc-400">Pothoshop  =  Basic / Intermediate</p></Card>
+				<Card>
+					<p className="mt-4 text-zinc-400">Blender  =  Intermediate</p>
+					<p className="mt-4 text-zinc-400">Kirita  =  Intermediate</p>
+					<p className="mt-4 text-zinc-400">Substance  =  Intermediate</p>
+					<p className="mt-4 text-zinc-400">Pothoshop  =  Basic / Intermediate</p>	
+				</Card>
 				</div>
 
 				<div className="hidden w-full h-px md:block bg-zinc-800" />
@@ -62,8 +69,10 @@ export default async function ProjectsPage() {
 					
 				<div className="grid  grid-cols-1 gap-8 mx-auto lg:mx-0 md:grid-cols-2">
 					
-					<Card><p className="mt-4 text-zinc-400">Mysql  =  Intermediate</p></Card>
-					<Card><p className="mt-4 text-zinc-400">Postgrest  =  Intermediate</p></Card>
+					<Card>
+						<p className="mt-4 text-zinc-400">Mysql  =  Intermediate</p>
+						<p className="mt-4 text-zinc-400">Postgrest  =  Intermediate</p>	
+					</Card>
 					
 					
 				</div>
@@ -72,10 +81,12 @@ export default async function ProjectsPage() {
 					General knowlage
 				</p>
 				<div className="grid  grid-cols-1 gap-8 mx-auto lg:mx-0 md:grid-cols-2">
-					<Card><p className="mt-4 text-zinc-400">Virtual machines  =  Intermediate</p></Card>
-					<Card><p className="mt-4 text-zinc-400">Cybersecurity Introduction  =  Intermediate</p></Card>
-					<Card><p className="mt-4 text-zinc-400">Linux Distributios  =  Basic / Intermediate</p></Card>
-					<Card><p className="mt-4 text-zinc-400">Cybersecurity with OSINT  =  Basic / Intermediate</p></Card>
+					<Card>
+						<p className="mt-4 text-zinc-400">Virtual machines  =  Intermediate</p>
+						<p className="mt-4 text-zinc-400">Cybersecurity Introduction  =  Intermediate</p>
+						<p className="mt-4 text-zinc-400">Linux Distributios  =  Basic / Intermediate</p>	
+						<p className="mt-4 text-zinc-400">Cybersecurity with OSINT  =  Basic / Intermediate</p>
+					</Card>
 				</div>
 			</div>
 		</div>
